@@ -3,14 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E01879B626F4C27500BD26A8 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = E01879B526F4C27500BD26A8 /* KeychainAccess */; };
+		E01879BD26F4C2BF00BD26A8 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879BC26F4C2BF00BD26A8 /* KeychainService.swift */; };
+		E01879BF26F4C2C500BD26A8 /* KeychainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879BE26F4C2C500BD26A8 /* KeychainRepository.swift */; };
+		E01879C326F4CD6B00BD26A8 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879C226F4CD6B00BD26A8 /* ColorViewController.swift */; };
+		E01879C626F4CE4D00BD26A8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E01879C526F4CE4D00BD26A8 /* SnapKit */; };
+		E01879C926F4CEB300BD26A8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = E01879C826F4CEB300BD26A8 /* RxRelay */; };
+		E01879CB26F4CEB300BD26A8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E01879CA26F4CEB300BD26A8 /* RxCocoa */; };
+		E01879CD26F4CEB300BD26A8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E01879CC26F4CEB300BD26A8 /* RxSwift */; };
+		E01879CF26F4CED600BD26A8 /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879CE26F4CED600BD26A8 /* ColorViewModel.swift */; };
+		E01879D126F4D15F00BD26A8 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879D026F4D15F00BD26A8 /* ColorModel.swift */; };
+		E01879D326F4D23500BD26A8 /* ColorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879D226F4D23500BD26A8 /* ColorUseCase.swift */; };
 		E069E35826F3860900ED4467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069E35726F3860900ED4467 /* AppDelegate.swift */; };
 		E069E35A26F3860900ED4467 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069E35926F3860900ED4467 /* SceneDelegate.swift */; };
 		E069E35C26F3860900ED4467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069E35B26F3860900ED4467 /* ViewController.swift */; };
-		E069E35F26F3860900ED4467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E069E35D26F3860900ED4467 /* Main.storyboard */; };
 		E069E36126F3860A00ED4467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E069E36026F3860A00ED4467 /* Assets.xcassets */; };
 		E069E36426F3860A00ED4467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E069E36226F3860A00ED4467 /* LaunchScreen.storyboard */; };
 		E069E36D26F3862200ED4467 /* NotSRP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069E36C26F3862200ED4467 /* NotSRP.swift */; };
@@ -18,11 +28,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E01879BC26F4C2BF00BD26A8 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		E01879BE26F4C2C500BD26A8 /* KeychainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainRepository.swift; sourceTree = "<group>"; };
+		E01879C226F4CD6B00BD26A8 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		E01879CE26F4CED600BD26A8 /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
+		E01879D026F4D15F00BD26A8 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
+		E01879D226F4D23500BD26A8 /* ColorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUseCase.swift; sourceTree = "<group>"; };
 		E069E35426F3860900ED4467 /* SOLID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOLID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E069E35726F3860900ED4467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E069E35926F3860900ED4467 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E069E35B26F3860900ED4467 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E069E35E26F3860900ED4467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E069E36026F3860A00ED4467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E069E36326F3860A00ED4467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E069E36526F3860A00ED4467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,12 +50,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01879C926F4CEB300BD26A8 /* RxRelay in Frameworks */,
+				E01879B626F4C27500BD26A8 /* KeychainAccess in Frameworks */,
+				E01879CD26F4CEB300BD26A8 /* RxSwift in Frameworks */,
+				E01879CB26F4CEB300BD26A8 /* RxCocoa in Frameworks */,
+				E01879C626F4CE4D00BD26A8 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E01879AE26F4BBAD00BD26A8 /* OCP */ = {
+			isa = PBXGroup;
+			children = (
+				E01879B726F4C29600BD26A8 /* Service */,
+				E01879B326F4C25D00BD26A8 /* Repository */,
+				E01879C226F4CD6B00BD26A8 /* ColorViewController.swift */,
+				E01879D226F4D23500BD26A8 /* ColorUseCase.swift */,
+				E01879CE26F4CED600BD26A8 /* ColorViewModel.swift */,
+				E01879D026F4D15F00BD26A8 /* ColorModel.swift */,
+			);
+			path = OCP;
+			sourceTree = "<group>";
+		};
+		E01879B326F4C25D00BD26A8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E01879BE26F4C2C500BD26A8 /* KeychainRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E01879B726F4C29600BD26A8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E01879BC26F4C2BF00BD26A8 /* KeychainService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		E069E34B26F3860900ED4467 = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +109,11 @@
 		E069E35626F3860900ED4467 /* SOLID */ = {
 			isa = PBXGroup;
 			children = (
+				E01879AE26F4BBAD00BD26A8 /* OCP */,
 				E069E36B26F3860F00ED4467 /* SRP */,
 				E069E35726F3860900ED4467 /* AppDelegate.swift */,
 				E069E35926F3860900ED4467 /* SceneDelegate.swift */,
 				E069E35B26F3860900ED4467 /* ViewController.swift */,
-				E069E35D26F3860900ED4467 /* Main.storyboard */,
 				E069E36026F3860A00ED4467 /* Assets.xcassets */,
 				E069E36226F3860A00ED4467 /* LaunchScreen.storyboard */,
 				E069E36526F3860A00ED4467 /* Info.plist */,
@@ -97,6 +146,13 @@
 			dependencies = (
 			);
 			name = SOLID;
+			packageProductDependencies = (
+				E01879B526F4C27500BD26A8 /* KeychainAccess */,
+				E01879C526F4CE4D00BD26A8 /* SnapKit */,
+				E01879C826F4CEB300BD26A8 /* RxRelay */,
+				E01879CA26F4CEB300BD26A8 /* RxCocoa */,
+				E01879CC26F4CEB300BD26A8 /* RxSwift */,
+			);
 			productName = SOLID;
 			productReference = E069E35426F3860900ED4467 /* SOLID.app */;
 			productType = "com.apple.product-type.application";
@@ -124,6 +180,11 @@
 				Base,
 			);
 			mainGroup = E069E34B26F3860900ED4467;
+			packageReferences = (
+				E01879B426F4C27500BD26A8 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				E01879C426F4CE4D00BD26A8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E01879C726F4CEB300BD26A8 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = E069E35526F3860900ED4467 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +201,6 @@
 			files = (
 				E069E36426F3860A00ED4467 /* LaunchScreen.storyboard in Resources */,
 				E069E36126F3860A00ED4467 /* Assets.xcassets in Resources */,
-				E069E35F26F3860900ED4467 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,25 +211,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01879D326F4D23500BD26A8 /* ColorUseCase.swift in Sources */,
 				E069E35C26F3860900ED4467 /* ViewController.swift in Sources */,
 				E069E36D26F3862200ED4467 /* NotSRP.swift in Sources */,
+				E01879C326F4CD6B00BD26A8 /* ColorViewController.swift in Sources */,
 				E0A2F7EA26F3920A0090FAF0 /* SRPwithFacade.swift in Sources */,
 				E069E35826F3860900ED4467 /* AppDelegate.swift in Sources */,
 				E069E35A26F3860900ED4467 /* SceneDelegate.swift in Sources */,
+				E01879BF26F4C2C500BD26A8 /* KeychainRepository.swift in Sources */,
+				E01879BD26F4C2BF00BD26A8 /* KeychainService.swift in Sources */,
+				E01879CF26F4CED600BD26A8 /* ColorViewModel.swift in Sources */,
+				E01879D126F4D15F00BD26A8 /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E069E35D26F3860900ED4467 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E069E35E26F3860900ED4467 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E069E36226F3860A00ED4467 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -357,6 +415,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E01879B426F4C27500BD26A8 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
+		E01879C426F4CE4D00BD26A8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		E01879C726F4CEB300BD26A8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E01879B526F4C27500BD26A8 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E01879B426F4C27500BD26A8 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		E01879C526F4CE4D00BD26A8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E01879C426F4CE4D00BD26A8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		E01879C826F4CEB300BD26A8 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E01879C726F4CEB300BD26A8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		E01879CA26F4CEB300BD26A8 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E01879C726F4CEB300BD26A8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E01879CC26F4CEB300BD26A8 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E01879C726F4CEB300BD26A8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E069E34C26F3860900ED4467 /* Project object */;
 }
