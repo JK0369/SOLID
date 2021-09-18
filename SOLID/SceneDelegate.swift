@@ -15,13 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
 
-        /// DI
-        let keychainRepositoryImpl = KeychainRepositoryImpl.shared
-        let keychainServiceImpl = KeychainServiceImpl(keychainRepository: keychainRepositoryImpl)
-        let colorUseCaseImpl = ColorUseCaseImpl(keychainService: keychainServiceImpl)
-        let viewModel = ColorViewModelImpl(colorUseCase: colorUseCaseImpl)
-
-        window?.rootViewController = UINavigationController(rootViewController: ColorViewController(viewModel: viewModel))
+        window?.rootViewController = UINavigationController(rootViewController: MainViewController())
         window?.makeKeyAndVisible()
     }
 

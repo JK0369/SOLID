@@ -18,6 +18,7 @@
 		E01879CF26F4CED600BD26A8 /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879CE26F4CED600BD26A8 /* ColorViewModel.swift */; };
 		E01879D126F4D15F00BD26A8 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879D026F4D15F00BD26A8 /* ColorModel.swift */; };
 		E01879D326F4D23500BD26A8 /* ColorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879D226F4D23500BD26A8 /* ColorUseCase.swift */; };
+		E0625C7826F5ED7600D7DAD0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0625C7726F5ED7600D7DAD0 /* MainViewController.swift */; };
 		E069E35826F3860900ED4467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069E35726F3860900ED4467 /* AppDelegate.swift */; };
 		E069E35A26F3860900ED4467 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069E35926F3860900ED4467 /* SceneDelegate.swift */; };
 		E069E35C26F3860900ED4467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069E35B26F3860900ED4467 /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 		E01879CE26F4CED600BD26A8 /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
 		E01879D026F4D15F00BD26A8 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		E01879D226F4D23500BD26A8 /* ColorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUseCase.swift; sourceTree = "<group>"; };
+		E0625C7726F5ED7600D7DAD0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E069E35426F3860900ED4467 /* SOLID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOLID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E069E35726F3860900ED4467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E069E35926F3860900ED4467 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				E069E36B26F3860F00ED4467 /* SRP */,
 				E069E35726F3860900ED4467 /* AppDelegate.swift */,
 				E069E35926F3860900ED4467 /* SceneDelegate.swift */,
+				E0625C7726F5ED7600D7DAD0 /* MainViewController.swift */,
 				E069E35B26F3860900ED4467 /* ViewController.swift */,
 				E069E36026F3860A00ED4467 /* Assets.xcassets */,
 				E069E36226F3860A00ED4467 /* LaunchScreen.storyboard */,
@@ -214,6 +217,7 @@
 				E01879D326F4D23500BD26A8 /* ColorUseCase.swift in Sources */,
 				E069E35C26F3860900ED4467 /* ViewController.swift in Sources */,
 				E069E36D26F3862200ED4467 /* NotSRP.swift in Sources */,
+				E0625C7826F5ED7600D7DAD0 /* MainViewController.swift in Sources */,
 				E01879C326F4CD6B00BD26A8 /* ColorViewController.swift in Sources */,
 				E0A2F7EA26F3920A0090FAF0 /* SRPwithFacade.swift in Sources */,
 				E069E35826F3860900ED4467 /* AppDelegate.swift in Sources */,
