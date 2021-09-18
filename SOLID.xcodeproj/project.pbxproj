@@ -19,6 +19,11 @@
 		E01879D126F4D15F00BD26A8 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879D026F4D15F00BD26A8 /* ColorModel.swift */; };
 		E01879D326F4D23500BD26A8 /* ColorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879D226F4D23500BD26A8 /* ColorUseCase.swift */; };
 		E0625C7826F5ED7600D7DAD0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0625C7726F5ED7600D7DAD0 /* MainViewController.swift */; };
+		E0625C7B26F5F1D600D7DAD0 /* BillingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0625C7A26F5F1D600D7DAD0 /* BillingViewController.swift */; };
+		E0625C7D26F5F1DD00D7DAD0 /* BillingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0625C7C26F5F1DD00D7DAD0 /* BillingViewModel.swift */; };
+		E0625C7F26F5F1EA00D7DAD0 /* LicenseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0625C7E26F5F1EA00D7DAD0 /* LicenseUseCase.swift */; };
+		E0625C8126F5F1F100D7DAD0 /* PersonalUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0625C8026F5F1F100D7DAD0 /* PersonalUseCase.swift */; };
+		E0625C8326F5F1F700D7DAD0 /* BusinessUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0625C8226F5F1F700D7DAD0 /* BusinessUseCase.swift */; };
 		E069E35826F3860900ED4467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069E35726F3860900ED4467 /* AppDelegate.swift */; };
 		E069E35A26F3860900ED4467 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069E35926F3860900ED4467 /* SceneDelegate.swift */; };
 		E069E35C26F3860900ED4467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069E35B26F3860900ED4467 /* ViewController.swift */; };
@@ -36,6 +41,11 @@
 		E01879D026F4D15F00BD26A8 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		E01879D226F4D23500BD26A8 /* ColorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUseCase.swift; sourceTree = "<group>"; };
 		E0625C7726F5ED7600D7DAD0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E0625C7A26F5F1D600D7DAD0 /* BillingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingViewController.swift; sourceTree = "<group>"; };
+		E0625C7C26F5F1DD00D7DAD0 /* BillingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingViewModel.swift; sourceTree = "<group>"; };
+		E0625C7E26F5F1EA00D7DAD0 /* LicenseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseUseCase.swift; sourceTree = "<group>"; };
+		E0625C8026F5F1F100D7DAD0 /* PersonalUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalUseCase.swift; sourceTree = "<group>"; };
+		E0625C8226F5F1F700D7DAD0 /* BusinessUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessUseCase.swift; sourceTree = "<group>"; };
 		E069E35426F3860900ED4467 /* SOLID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOLID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E069E35726F3860900ED4467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E069E35926F3860900ED4467 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +102,18 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		E0625C7926F5EF1F00D7DAD0 /* LSP */ = {
+			isa = PBXGroup;
+			children = (
+				E0625C7A26F5F1D600D7DAD0 /* BillingViewController.swift */,
+				E0625C7C26F5F1DD00D7DAD0 /* BillingViewModel.swift */,
+				E0625C7E26F5F1EA00D7DAD0 /* LicenseUseCase.swift */,
+				E0625C8026F5F1F100D7DAD0 /* PersonalUseCase.swift */,
+				E0625C8226F5F1F700D7DAD0 /* BusinessUseCase.swift */,
+			);
+			path = LSP;
+			sourceTree = "<group>";
+		};
 		E069E34B26F3860900ED4467 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +133,7 @@
 		E069E35626F3860900ED4467 /* SOLID */ = {
 			isa = PBXGroup;
 			children = (
+				E0625C7926F5EF1F00D7DAD0 /* LSP */,
 				E01879AE26F4BBAD00BD26A8 /* OCP */,
 				E069E36B26F3860F00ED4467 /* SRP */,
 				E069E35726F3860900ED4467 /* AppDelegate.swift */,
@@ -214,6 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0625C7B26F5F1D600D7DAD0 /* BillingViewController.swift in Sources */,
+				E0625C7F26F5F1EA00D7DAD0 /* LicenseUseCase.swift in Sources */,
 				E01879D326F4D23500BD26A8 /* ColorUseCase.swift in Sources */,
 				E069E35C26F3860900ED4467 /* ViewController.swift in Sources */,
 				E069E36D26F3862200ED4467 /* NotSRP.swift in Sources */,
@@ -221,10 +246,13 @@
 				E01879C326F4CD6B00BD26A8 /* ColorViewController.swift in Sources */,
 				E0A2F7EA26F3920A0090FAF0 /* SRPwithFacade.swift in Sources */,
 				E069E35826F3860900ED4467 /* AppDelegate.swift in Sources */,
+				E0625C7D26F5F1DD00D7DAD0 /* BillingViewModel.swift in Sources */,
 				E069E35A26F3860900ED4467 /* SceneDelegate.swift in Sources */,
 				E01879BF26F4C2C500BD26A8 /* KeychainRepository.swift in Sources */,
 				E01879BD26F4C2BF00BD26A8 /* KeychainService.swift in Sources */,
+				E0625C8126F5F1F100D7DAD0 /* PersonalUseCase.swift in Sources */,
 				E01879CF26F4CED600BD26A8 /* ColorViewModel.swift in Sources */,
+				E0625C8326F5F1F700D7DAD0 /* BusinessUseCase.swift in Sources */,
 				E01879D126F4D15F00BD26A8 /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

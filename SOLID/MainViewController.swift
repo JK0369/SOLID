@@ -27,6 +27,14 @@ class MainViewController: UIViewController {
         return button
     }()
 
+    lazy var lspButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("LSP", for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
+
+        return button
+    }()
+
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -44,7 +52,7 @@ class MainViewController: UIViewController {
 
     private func addSubviews() {
         view.addSubview(buttonContainerStackView)
-        [ocpButton].forEach { buttonContainerStackView.addArrangedSubview($0) }
+        [ocpButton, lspButton].forEach { buttonContainerStackView.addArrangedSubview($0) }
     }
 
     private func makeConstraints() {
@@ -55,6 +63,7 @@ class MainViewController: UIViewController {
 
     private func bindEvents() {
         ocpButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapOcpButton() }).disposed(by: disposeBag)
+        lspButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapLspButton() }).disposed(by: disposeBag)
     }
 
     private func didTapOcpButton() {
@@ -65,5 +74,20 @@ class MainViewController: UIViewController {
         let viewModel = ColorViewModelImpl(colorUseCase: colorUseCaseImpl)
 
         navigationController?.pushViewController(ColorViewController(viewModel: viewModel), animated: true)
+    }
+
+    private func didTapLspButton() {
+        // DI
+        let randomInt = Int.random(in: (0...1))
+        let useCase: LicenseUseCase
+        if randomInt == 0 {
+            useCase = PersonalUseCase()
+        } else {
+            useCase = BusinessUseCase()
+        }
+        let viewModel = BillingViewModelImpl(licenseUseCase: useCase)
+        let viewController = BillingViewController(viewModel: viewModel)
+
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
