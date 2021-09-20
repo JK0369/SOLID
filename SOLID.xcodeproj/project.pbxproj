@@ -18,6 +18,9 @@
 		E01879CF26F4CED600BD26A8 /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879CE26F4CED600BD26A8 /* ColorViewModel.swift */; };
 		E01879D126F4D15F00BD26A8 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879D026F4D15F00BD26A8 /* ColorModel.swift */; };
 		E01879D326F4D23500BD26A8 /* ColorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01879D226F4D23500BD26A8 /* ColorUseCase.swift */; };
+		E03D2F3626F8C03D00C24B98 /* SOLIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D2F3526F8C03D00C24B98 /* SOLIDTests.swift */; };
+		E03D2F4026F8C07C00C24B98 /* ProductListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D2F3F26F8C07C00C24B98 /* ProductListUseCaseTests.swift */; };
+		E03D2F4526F8C38400C24B98 /* ProductListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D2F4426F8C38400C24B98 /* ProductListViewModelTests.swift */; };
 		E0625C7826F5ED7600D7DAD0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0625C7726F5ED7600D7DAD0 /* MainViewController.swift */; };
 		E0625C7B26F5F1D600D7DAD0 /* BillingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0625C7A26F5F1D600D7DAD0 /* BillingViewController.swift */; };
 		E0625C7D26F5F1DD00D7DAD0 /* BillingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0625C7C26F5F1DD00D7DAD0 /* BillingViewModel.swift */; };
@@ -48,6 +51,16 @@
 		E0F6CAF926F7525F005B9EB1 /* ISP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F6CAF826F7525F005B9EB1 /* ISP.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E03D2F3826F8C03D00C24B98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E069E34C26F3860900ED4467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E069E35326F3860900ED4467;
+			remoteInfo = SOLID;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E01879BC26F4C2BF00BD26A8 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		E01879BE26F4C2C500BD26A8 /* KeychainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainRepository.swift; sourceTree = "<group>"; };
@@ -55,6 +68,11 @@
 		E01879CE26F4CED600BD26A8 /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
 		E01879D026F4D15F00BD26A8 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		E01879D226F4D23500BD26A8 /* ColorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUseCase.swift; sourceTree = "<group>"; };
+		E03D2F3326F8C03D00C24B98 /* SOLIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOLIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E03D2F3526F8C03D00C24B98 /* SOLIDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOLIDTests.swift; sourceTree = "<group>"; };
+		E03D2F3726F8C03D00C24B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E03D2F3F26F8C07C00C24B98 /* ProductListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListUseCaseTests.swift; sourceTree = "<group>"; };
+		E03D2F4426F8C38400C24B98 /* ProductListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModelTests.swift; sourceTree = "<group>"; };
 		E0625C7726F5ED7600D7DAD0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E0625C7A26F5F1D600D7DAD0 /* BillingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingViewController.swift; sourceTree = "<group>"; };
 		E0625C7C26F5F1DD00D7DAD0 /* BillingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingViewModel.swift; sourceTree = "<group>"; };
@@ -88,6 +106,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E03D2F3026F8C03D00C24B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E069E35126F3860900ED4467 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,6 +157,41 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		E03D2F3426F8C03D00C24B98 /* SOLIDTests */ = {
+			isa = PBXGroup;
+			children = (
+				E03D2F3E26F8C06600C24B98 /* UseCases */,
+				E03D2F3D26F8C06100C24B98 /* Presentation */,
+				E03D2F3526F8C03D00C24B98 /* SOLIDTests.swift */,
+				E03D2F3726F8C03D00C24B98 /* Info.plist */,
+			);
+			path = SOLIDTests;
+			sourceTree = "<group>";
+		};
+		E03D2F3D26F8C06100C24B98 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E03D2F4326F8C37700C24B98 /* ProductScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E03D2F3E26F8C06600C24B98 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				E03D2F3F26F8C07C00C24B98 /* ProductListUseCaseTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		E03D2F4326F8C37700C24B98 /* ProductScene */ = {
+			isa = PBXGroup;
+			children = (
+				E03D2F4426F8C38400C24B98 /* ProductListViewModelTests.swift */,
+			);
+			path = ProductScene;
+			sourceTree = "<group>";
+		};
 		E0625C7926F5EF1F00D7DAD0 /* LSP */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				E069E35626F3860900ED4467 /* SOLID */,
+				E03D2F3426F8C03D00C24B98 /* SOLIDTests */,
 				E069E35526F3860900ED4467 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -156,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				E069E35426F3860900ED4467 /* SOLID.app */,
+				E03D2F3326F8C03D00C24B98 /* SOLIDTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,6 +314,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E03D2F3226F8C03D00C24B98 /* SOLIDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E03D2F3C26F8C03D00C24B98 /* Build configuration list for PBXNativeTarget "SOLIDTests" */;
+			buildPhases = (
+				E03D2F2F26F8C03D00C24B98 /* Sources */,
+				E03D2F3026F8C03D00C24B98 /* Frameworks */,
+				E03D2F3126F8C03D00C24B98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E03D2F3926F8C03D00C24B98 /* PBXTargetDependency */,
+			);
+			name = SOLIDTests;
+			productName = SOLIDTests;
+			productReference = E03D2F3326F8C03D00C24B98 /* SOLIDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E069E35326F3860900ED4467 /* SOLID */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E069E36826F3860A00ED4467 /* Build configuration list for PBXNativeTarget "SOLID" */;
@@ -285,6 +365,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					E03D2F3226F8C03D00C24B98 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E069E35326F3860900ED4467;
+					};
 					E069E35326F3860900ED4467 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -309,11 +393,19 @@
 			projectRoot = "";
 			targets = (
 				E069E35326F3860900ED4467 /* SOLID */,
+				E03D2F3226F8C03D00C24B98 /* SOLIDTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E03D2F3126F8C03D00C24B98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E069E35226F3860900ED4467 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,6 +418,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E03D2F2F26F8C03D00C24B98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E03D2F3626F8C03D00C24B98 /* SOLIDTests.swift in Sources */,
+				E03D2F4026F8C07C00C24B98 /* ProductListUseCaseTests.swift in Sources */,
+				E03D2F4526F8C38400C24B98 /* ProductListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E069E35026F3860900ED4467 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +469,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E03D2F3926F8C03D00C24B98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E069E35326F3860900ED4467 /* SOLID */;
+			targetProxy = E03D2F3826F8C03D00C24B98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		E069E36226F3860A00ED4467 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -379,6 +489,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E03D2F3A26F8C03D00C24B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SS7U83UJNK;
+				INFOPLIST_FILE = SOLIDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jake.SOLIDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOLID.app/SOLID";
+			};
+			name = Debug;
+		};
+		E03D2F3B26F8C03D00C24B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SS7U83UJNK;
+				INFOPLIST_FILE = SOLIDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jake.SOLIDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOLID.app/SOLID";
+			};
+			name = Release;
+		};
 		E069E36626F3860A00ED4467 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -536,6 +686,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E03D2F3C26F8C03D00C24B98 /* Build configuration list for PBXNativeTarget "SOLIDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E03D2F3A26F8C03D00C24B98 /* Debug */,
+				E03D2F3B26F8C03D00C24B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E069E34F26F3860900ED4467 /* Build configuration list for PBXProject "SOLID" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

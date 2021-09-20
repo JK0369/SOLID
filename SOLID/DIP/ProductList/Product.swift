@@ -10,6 +10,6 @@ import Foundation
 struct Product {
     let title: String
     let price: Double
-    let isSale: Bool
+    var isSale: Bool
     var isSelected: Bool = false
 }
