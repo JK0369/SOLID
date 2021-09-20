@@ -35,6 +35,14 @@ class MainViewController: UIViewController {
         return button
     }()
 
+    lazy var dipButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("DIP", for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
+
+        return button
+    }()
+
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -52,7 +60,7 @@ class MainViewController: UIViewController {
 
     private func addSubviews() {
         view.addSubview(buttonContainerStackView)
-        [ocpButton, lspButton].forEach { buttonContainerStackView.addArrangedSubview($0) }
+        [ocpButton, lspButton, dipButton].forEach { buttonContainerStackView.addArrangedSubview($0) }
     }
 
     private func makeConstraints() {
@@ -64,6 +72,7 @@ class MainViewController: UIViewController {
     private func bindEvents() {
         ocpButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapOcpButton() }).disposed(by: disposeBag)
         lspButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapLspButton() }).disposed(by: disposeBag)
+        dipButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapDipButton() }).disposed(by: disposeBag)
     }
 
     private func didTapOcpButton() {
@@ -87,6 +96,13 @@ class MainViewController: UIViewController {
         }
         let viewModel = BillingViewModelImpl(licenseUseCase: useCase)
         let viewController = BillingViewController(viewModel: viewModel)
+
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    private func didTapDipButton() {
+        let productListDIContainer = ProductListDIContainer()
+        let viewController = productListDIContainer.productListViewController
 
         navigationController?.pushViewController(viewController, animated: true)
     }
