@@ -43,6 +43,14 @@ class MainViewController: UIViewController {
         return button
     }()
 
+    lazy var coordinatorButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Coordinator", for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
+
+        return button
+    }()
+
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -60,7 +68,7 @@ class MainViewController: UIViewController {
 
     private func addSubviews() {
         view.addSubview(buttonContainerStackView)
-        [ocpButton, lspButton, dipButton].forEach { buttonContainerStackView.addArrangedSubview($0) }
+        [ocpButton, lspButton, dipButton, coordinatorButton].forEach { buttonContainerStackView.addArrangedSubview($0) }
     }
 
     private func makeConstraints() {
@@ -73,6 +81,7 @@ class MainViewController: UIViewController {
         ocpButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapOcpButton() }).disposed(by: disposeBag)
         lspButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapLspButton() }).disposed(by: disposeBag)
         dipButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapDipButton() }).disposed(by: disposeBag)
+        coordinatorButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapcoordinatorButton() }).disposed(by: disposeBag)
     }
 
     private func didTapOcpButton() {
@@ -105,5 +114,12 @@ class MainViewController: UIViewController {
         let viewController = productListDIContainer.productListViewController
 
         navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    private func didTapcoordinatorButton() {
+        let buttonsDIContainer = ButtonsDIContainer()
+        let coordinator = buttonsDIContainer.makeButtonCoordinator(navigationController: navigationController!)
+
+        coordinator.start()
     }
 }

@@ -47,6 +47,13 @@
 		E0A06DE226F872D700E132E1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A06DE126F872D700E132E1 /* Product.swift */; };
 		E0A06DE426F8752000E132E1 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A06DE326F8752000E132E1 /* ProductTableViewCell.swift */; };
 		E0A2F7EA26F3920A0090FAF0 /* SRPwithFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A2F7E926F3920A0090FAF0 /* SRPwithFacade.swift */; };
+		E0AF25B926F991FC008C003A /* ButtonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF25B826F991FC008C003A /* ButtonsViewModel.swift */; };
+		E0AF25BB26F9920F008C003A /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF25BA26F9920F008C003A /* ButtonsViewController.swift */; };
+		E0AF25BD26F9921B008C003A /* ButtonsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF25BC26F9921B008C003A /* ButtonsCoordinator.swift */; };
+		E0AF25C126F9925B008C003A /* ButtonsDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF25C026F9925B008C003A /* ButtonsDIContainer.swift */; };
+		E0AF25C326F992A5008C003A /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF25C226F992A5008C003A /* RedViewController.swift */; };
+		E0AF25C526F992AC008C003A /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF25C426F992AC008C003A /* BlueViewController.swift */; };
+		E0AF25C826F99368008C003A /* ButtonsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF25C726F99368008C003A /* ButtonsUseCase.swift */; };
 		E0F6CAF726F74F46005B9EB1 /* NotISP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F6CAF626F74F46005B9EB1 /* NotISP.swift */; };
 		E0F6CAF926F7525F005B9EB1 /* ISP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F6CAF826F7525F005B9EB1 /* ISP.swift */; };
 /* End PBXBuildFile section */
@@ -101,6 +108,13 @@
 		E0A06DE126F872D700E132E1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		E0A06DE326F8752000E132E1 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		E0A2F7E926F3920A0090FAF0 /* SRPwithFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRPwithFacade.swift; sourceTree = "<group>"; };
+		E0AF25B826F991FC008C003A /* ButtonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewModel.swift; sourceTree = "<group>"; };
+		E0AF25BA26F9920F008C003A /* ButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
+		E0AF25BC26F9921B008C003A /* ButtonsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsCoordinator.swift; sourceTree = "<group>"; };
+		E0AF25C026F9925B008C003A /* ButtonsDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsDIContainer.swift; sourceTree = "<group>"; };
+		E0AF25C226F992A5008C003A /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		E0AF25C426F992AC008C003A /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		E0AF25C726F99368008C003A /* ButtonsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsUseCase.swift; sourceTree = "<group>"; };
 		E0F6CAF626F74F46005B9EB1 /* NotISP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotISP.swift; sourceTree = "<group>"; };
 		E0F6CAF826F7525F005B9EB1 /* ISP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +239,7 @@
 		E069E35626F3860900ED4467 /* SOLID */ = {
 			isa = PBXGroup;
 			children = (
+				E0AF25B726F98B04008C003A /* Coordinator Pattern */,
 				E0A06DC426F853FD00E132E1 /* DIP */,
 				E0F6CAF526F74F29005B9EB1 /* ISP */,
 				E0625C7926F5EF1F00D7DAD0 /* LSP */,
@@ -300,6 +315,20 @@
 				E0A06DE326F8752000E132E1 /* ProductTableViewCell.swift */,
 			);
 			path = ProductList;
+			sourceTree = "<group>";
+		};
+		E0AF25B726F98B04008C003A /* Coordinator Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				E0AF25B826F991FC008C003A /* ButtonsViewModel.swift */,
+				E0AF25BA26F9920F008C003A /* ButtonsViewController.swift */,
+				E0AF25C026F9925B008C003A /* ButtonsDIContainer.swift */,
+				E0AF25BC26F9921B008C003A /* ButtonsCoordinator.swift */,
+				E0AF25C726F99368008C003A /* ButtonsUseCase.swift */,
+				E0AF25C226F992A5008C003A /* RedViewController.swift */,
+				E0AF25C426F992AC008C003A /* BlueViewController.swift */,
+			);
+			path = "Coordinator Pattern";
 			sourceTree = "<group>";
 		};
 		E0F6CAF526F74F29005B9EB1 /* ISP */ = {
@@ -432,14 +461,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0AF25C526F992AC008C003A /* BlueViewController.swift in Sources */,
 				E0A06DD526F8561100E132E1 /* ServiceFactory.swift in Sources */,
 				E0F6CAF926F7525F005B9EB1 /* ISP.swift in Sources */,
 				E0A06DE026F8722700E132E1 /* ProductListDIContainer.swift in Sources */,
+				E0AF25BD26F9921B008C003A /* ButtonsCoordinator.swift in Sources */,
 				E0625C7B26F5F1D600D7DAD0 /* BillingViewController.swift in Sources */,
 				E0625C7F26F5F1EA00D7DAD0 /* LicenseUseCase.swift in Sources */,
 				E01879D326F4D23500BD26A8 /* ColorUseCase.swift in Sources */,
 				E069E35C26F3860900ED4467 /* ViewController.swift in Sources */,
 				E0A06DCE26F8546900E132E1 /* ServiceConcrete_NotFactory.swift in Sources */,
+				E0AF25C326F992A5008C003A /* RedViewController.swift in Sources */,
+				E0AF25BB26F9920F008C003A /* ButtonsViewController.swift in Sources */,
 				E069E36D26F3862200ED4467 /* NotSRP.swift in Sources */,
 				E0625C7826F5ED7600D7DAD0 /* MainViewController.swift in Sources */,
 				E01879C326F4CD6B00BD26A8 /* ColorViewController.swift in Sources */,
@@ -454,13 +487,16 @@
 				E01879BF26F4C2C500BD26A8 /* KeychainRepository.swift in Sources */,
 				E0F6CAF726F74F46005B9EB1 /* NotISP.swift in Sources */,
 				E0A06DD126F8552900E132E1 /* ServiceConcrete_ApplyFactory.swift in Sources */,
+				E0AF25C826F99368008C003A /* ButtonsUseCase.swift in Sources */,
 				E0A06DD326F855F100E132E1 /* Service.swift in Sources */,
 				E0A06DDA26F8720800E132E1 /* ProductListViewController.swift in Sources */,
+				E0AF25C126F9925B008C003A /* ButtonsDIContainer.swift in Sources */,
 				E01879BD26F4C2BF00BD26A8 /* KeychainService.swift in Sources */,
 				E0625C8126F5F1F100D7DAD0 /* PersonalUseCase.swift in Sources */,
 				E01879CF26F4CED600BD26A8 /* ColorViewModel.swift in Sources */,
 				E0A06DE226F872D700E132E1 /* Product.swift in Sources */,
 				E0A06DD726F8565B00E132E1 /* ServiceConcreteImpl.swift in Sources */,
+				E0AF25B926F991FC008C003A /* ButtonsViewModel.swift in Sources */,
 				E0625C8326F5F1F700D7DAD0 /* BusinessUseCase.swift in Sources */,
 				E01879D126F4D15F00BD26A8 /* ColorModel.swift in Sources */,
 				E0A06DC826F8540D00E132E1 /* Application_NotFactory.swift in Sources */,
