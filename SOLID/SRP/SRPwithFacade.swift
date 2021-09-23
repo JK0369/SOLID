@@ -14,10 +14,10 @@ class Employee {
         case development // 개발
     }
     let workType: WorkType
-    let data: Data
+    let data: CalData
     let employeeFacade: EmployeeFacade
 
-    init(workType: WorkType, data: Data) {
+    init(workType: WorkType, data: CalData) {
         self.workType = workType
         self.data = data
         self.employeeFacade = EmployeeFacade(payCalculator: PayCalculator(data: data),
@@ -53,9 +53,9 @@ class EmployeeFacade {
 
 class PayCalculator {
 
-    var data: Data
+    var data: CalData
 
-    init(data: Data) {
+    init(data: CalData) {
         self.data = data
     }
 
@@ -71,9 +71,9 @@ class PayCalculator {
 
 class HourReporter {
 
-    var data: Data
+    var data: CalData
 
-    init(data: Data) {
+    init(data: CalData) {
         self.data = data
     }
 
@@ -88,9 +88,9 @@ class HourReporter {
 
 class EmployeeSaver {
 
-    var data: Data
+    var data: CalData
 
-    init(data: Data) {
+    init(data: CalData) {
         self.data = data
     }
 
@@ -100,13 +100,13 @@ class EmployeeSaver {
     }
 }
 
-class Data {
+class CalData {
     var calculatedHourByPay: Int?
     var calculatedHourByHour: Int?
 }
 
 func main() {
-    let data = Data()
+    let data = CalData()
 
     let financer = Employee(workType: .finance, data: data)
     financer.employeeFacade.calculatePay()

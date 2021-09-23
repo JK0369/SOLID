@@ -51,6 +51,14 @@ class MainViewController: UIViewController {
         return button
     }()
 
+    lazy var networkButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("network", for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
+
+        return button
+    }()
+
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -68,7 +76,7 @@ class MainViewController: UIViewController {
 
     private func addSubviews() {
         view.addSubview(buttonContainerStackView)
-        [ocpButton, lspButton, dipButton, coordinatorButton].forEach { buttonContainerStackView.addArrangedSubview($0) }
+        [ocpButton, lspButton, dipButton, coordinatorButton, networkButton].forEach { buttonContainerStackView.addArrangedSubview($0) }
     }
 
     private func makeConstraints() {
@@ -82,6 +90,7 @@ class MainViewController: UIViewController {
         lspButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapLspButton() }).disposed(by: disposeBag)
         dipButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapDipButton() }).disposed(by: disposeBag)
         coordinatorButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapcoordinatorButton() }).disposed(by: disposeBag)
+        networkButton.rx.tap.subscribe(onNext: { [weak self] in self?.didTapNetworkButton() }).disposed(by: disposeBag)
     }
 
     private func didTapOcpButton() {
@@ -121,5 +130,18 @@ class MainViewController: UIViewController {
         let coordinator = buttonsDIContainer.makeButtonCoordinator(navigationController: navigationController!)
 
         coordinator.start()
+    }
+
+    private func didTapNetworkButton() {
+
+        // TODO: dataTransferService객체는 AppDIContainer를 만들어서, CitySceneDIContainer의 생성자에 주입
+        let baseURL = URL(string: "https://projects.propublica.org/")! // baseURL같은 정보는 info.plist같은곳에 정의
+        let networkService = DefaultNetworkService(config: ApiDataNetworkConfig(baseURL: baseURL))
+        let dataTransferService = DefaultDataTransferService(with: networkService)
+
+        let cityDIContainer = CitySceneDIContainer(dependencies: .init(cityDataTransferService: dataTransferService))
+        let cityCoordinator = CitySceneCoordinator(navigationController: navigationController!, dependencies: cityDIContainer)
+
+        cityCoordinator.start()
     }
 }

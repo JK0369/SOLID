@@ -33,6 +33,19 @@
 		E069E36126F3860A00ED4467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E069E36026F3860A00ED4467 /* Assets.xcassets */; };
 		E069E36426F3860A00ED4467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E069E36226F3860A00ED4467 /* LaunchScreen.storyboard */; };
 		E069E36D26F3862200ED4467 /* NotSRP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069E36C26F3862200ED4467 /* NotSRP.swift */; };
+		E06AB5C026FC722A002CB814 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB5BF26FC722A002CB814 /* APIEndpoints.swift */; };
+		E06AB5F526FC81F6002CB814 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB5F426FC81F6002CB814 /* Cancellable.swift */; };
+		E06AB5F826FC8223002CB814 /* RepositoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB5F726FC8223002CB814 /* RepositoryTask.swift */; };
+		E06AB5FE26FC9CF6002CB814 /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB5FD26FC9CF6002CB814 /* CityRepository.swift */; };
+		E06AB60126FC9D99002CB814 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB60026FC9D99002CB814 /* City.swift */; };
+		E06AB60326FC9E26002CB814 /* CityRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB60226FC9E26002CB814 /* CityRequestDTO+Mapping.swift */; };
+		E06AB60526FC9FD4002CB814 /* CityResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB60426FC9FD4002CB814 /* CityResponseDTO+Mapping.swift */; };
+		E06AB60726FCA0D0002CB814 /* CityRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB60626FCA0D0002CB814 /* CityRepositoryImpl.swift */; };
+		E06AB60A26FCA28C002CB814 /* CityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB60926FCA28C002CB814 /* CityUseCase.swift */; };
+		E06AB61226FCA584002CB814 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB61126FCA584002CB814 /* CityViewController.swift */; };
+		E06AB61426FCA5A7002CB814 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB61326FCA5A7002CB814 /* CityViewModel.swift */; };
+		E06AB61626FCB04C002CB814 /* CitySceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB61526FCB04C002CB814 /* CitySceneDIContainer.swift */; };
+		E06AB61826FCB1F4002CB814 /* CitySceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB61726FCB1F4002CB814 /* CitySceneCoordinator.swift */; };
 		E0A06DC626F8540600E132E1 /* Application_ApplyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A06DC526F8540600E132E1 /* Application_ApplyFactory.swift */; };
 		E0A06DC826F8540D00E132E1 /* Application_NotFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A06DC726F8540D00E132E1 /* Application_NotFactory.swift */; };
 		E0A06DCE26F8546900E132E1 /* ServiceConcrete_NotFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A06DCD26F8546900E132E1 /* ServiceConcrete_NotFactory.swift */; };
@@ -54,6 +67,10 @@
 		E0AF25C326F992A5008C003A /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF25C226F992A5008C003A /* RedViewController.swift */; };
 		E0AF25C526F992AC008C003A /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF25C426F992AC008C003A /* BlueViewController.swift */; };
 		E0AF25C826F99368008C003A /* ButtonsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF25C726F99368008C003A /* ButtonsUseCase.swift */; };
+		E0E29AC426FA1A3300B75169 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E29AC326FA1A3300B75169 /* Endpoint.swift */; };
+		E0E29AC626FA1A9B00B75169 /* NetworkConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E29AC526FA1A9B00B75169 /* NetworkConfigurable.swift */; };
+		E0E29AC826FA3E9B00B75169 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E29AC726FA3E9B00B75169 /* DataTransferService.swift */; };
+		E0E29ACA26FA3EBA00B75169 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E29AC926FA3EBA00B75169 /* NetworkService.swift */; };
 		E0F6CAF726F74F46005B9EB1 /* NotISP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F6CAF626F74F46005B9EB1 /* NotISP.swift */; };
 		E0F6CAF926F7525F005B9EB1 /* ISP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F6CAF826F7525F005B9EB1 /* ISP.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +111,19 @@
 		E069E36326F3860A00ED4467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E069E36526F3860A00ED4467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E069E36C26F3862200ED4467 /* NotSRP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSRP.swift; sourceTree = "<group>"; };
+		E06AB5BF26FC722A002CB814 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		E06AB5F426FC81F6002CB814 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		E06AB5F726FC8223002CB814 /* RepositoryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTask.swift; sourceTree = "<group>"; };
+		E06AB5FD26FC9CF6002CB814 /* CityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepository.swift; sourceTree = "<group>"; };
+		E06AB60026FC9D99002CB814 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		E06AB60226FC9E26002CB814 /* CityRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CityRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
+		E06AB60426FC9FD4002CB814 /* CityResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CityResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		E06AB60626FCA0D0002CB814 /* CityRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepositoryImpl.swift; sourceTree = "<group>"; };
+		E06AB60926FCA28C002CB814 /* CityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityUseCase.swift; sourceTree = "<group>"; };
+		E06AB61126FCA584002CB814 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		E06AB61326FCA5A7002CB814 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		E06AB61526FCB04C002CB814 /* CitySceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySceneDIContainer.swift; sourceTree = "<group>"; };
+		E06AB61726FCB1F4002CB814 /* CitySceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySceneCoordinator.swift; sourceTree = "<group>"; };
 		E0A06DC526F8540600E132E1 /* Application_ApplyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application_ApplyFactory.swift; sourceTree = "<group>"; };
 		E0A06DC726F8540D00E132E1 /* Application_NotFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application_NotFactory.swift; sourceTree = "<group>"; };
 		E0A06DCD26F8546900E132E1 /* ServiceConcrete_NotFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConcrete_NotFactory.swift; sourceTree = "<group>"; };
@@ -115,6 +145,10 @@
 		E0AF25C226F992A5008C003A /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		E0AF25C426F992AC008C003A /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		E0AF25C726F99368008C003A /* ButtonsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsUseCase.swift; sourceTree = "<group>"; };
+		E0E29AC326FA1A3300B75169 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		E0E29AC526FA1A9B00B75169 /* NetworkConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurable.swift; sourceTree = "<group>"; };
+		E0E29AC726FA3E9B00B75169 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		E0E29AC926FA3EBA00B75169 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E0F6CAF626F74F46005B9EB1 /* NotISP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotISP.swift; sourceTree = "<group>"; };
 		E0F6CAF826F7525F005B9EB1 /* ISP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -239,6 +273,7 @@
 		E069E35626F3860900ED4467 /* SOLID */ = {
 			isa = PBXGroup;
 			children = (
+				E06AB5B726FC7192002CB814 /* NetworkExample */,
 				E0AF25B726F98B04008C003A /* Coordinator Pattern */,
 				E0A06DC426F853FD00E132E1 /* DIP */,
 				E0F6CAF526F74F29005B9EB1 /* ISP */,
@@ -263,6 +298,174 @@
 				E0A2F7E926F3920A0090FAF0 /* SRPwithFacade.swift */,
 			);
 			path = SRP;
+			sourceTree = "<group>";
+		};
+		E06AB5B726FC7192002CB814 /* NetworkExample */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB5F326FC81EF002CB814 /* Common */,
+				E06AB5B826FC719A002CB814 /* Presentation */,
+				E06AB5B926FC71AE002CB814 /* Domain */,
+				E06AB5BA26FC71B1002CB814 /* Data */,
+				E0E29AC226FA1A2D00B75169 /* Infrastructure */,
+			);
+			path = NetworkExample;
+			sourceTree = "<group>";
+		};
+		E06AB5B826FC719A002CB814 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB60C26FCA54D002CB814 /* CityScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E06AB5B926FC71AE002CB814 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB5FF26FC9D92002CB814 /* Entities */,
+				E06AB60826FCA281002CB814 /* UseCases */,
+				E06AB5EF26FC81AB002CB814 /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E06AB5BA26FC71B1002CB814 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB5BC26FC71DD002CB814 /* Network */,
+				E06AB5BD26FC71E3002CB814 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E06AB5BB26FC71C8002CB814 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E0E29AC526FA1A9B00B75169 /* NetworkConfigurable.swift */,
+				E0E29AC326FA1A3300B75169 /* Endpoint.swift */,
+				E0E29AC926FA3EBA00B75169 /* NetworkService.swift */,
+				E0E29AC726FA3E9B00B75169 /* DataTransferService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E06AB5BC26FC71DD002CB814 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB5BF26FC722A002CB814 /* APIEndpoints.swift */,
+				E06AB5C126FC741D002CB814 /* DataMapping */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E06AB5BD26FC71E3002CB814 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB60626FCA0D0002CB814 /* CityRepositoryImpl.swift */,
+				E06AB5F626FC821B002CB814 /* Utils */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E06AB5C126FC741D002CB814 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB60226FC9E26002CB814 /* CityRequestDTO+Mapping.swift */,
+				E06AB60426FC9FD4002CB814 /* CityResponseDTO+Mapping.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		E06AB5EF26FC81AB002CB814 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB5F026FC81B2002CB814 /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		E06AB5F026FC81B2002CB814 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB5FD26FC9CF6002CB814 /* CityRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E06AB5F326FC81EF002CB814 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB5F426FC81F6002CB814 /* Cancellable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E06AB5F626FC821B002CB814 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB5F726FC8223002CB814 /* RepositoryTask.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E06AB5FF26FC9D92002CB814 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB60026FC9D99002CB814 /* City.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E06AB60826FCA281002CB814 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB60926FCA28C002CB814 /* CityUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		E06AB60C26FCA54D002CB814 /* CityScene */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB61026FCA573002CB814 /* DIContainer */,
+				E06AB60F26FCA563002CB814 /* Flows */,
+				E06AB60E26FCA55D002CB814 /* ViewModel  */,
+				E06AB60D26FCA552002CB814 /* View */,
+			);
+			path = CityScene;
+			sourceTree = "<group>";
+		};
+		E06AB60D26FCA552002CB814 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB61126FCA584002CB814 /* CityViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E06AB60E26FCA55D002CB814 /* ViewModel  */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB61326FCA5A7002CB814 /* CityViewModel.swift */,
+			);
+			path = "ViewModel ";
+			sourceTree = "<group>";
+		};
+		E06AB60F26FCA563002CB814 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB61726FCB1F4002CB814 /* CitySceneCoordinator.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		E06AB61026FCA573002CB814 /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB61526FCB04C002CB814 /* CitySceneDIContainer.swift */,
+			);
+			path = DIContainer;
 			sourceTree = "<group>";
 		};
 		E0A06DC426F853FD00E132E1 /* DIP */ = {
@@ -329,6 +532,14 @@
 				E0AF25C426F992AC008C003A /* BlueViewController.swift */,
 			);
 			path = "Coordinator Pattern";
+			sourceTree = "<group>";
+		};
+		E0E29AC226FA1A2D00B75169 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB5BB26FC71C8002CB814 /* Network */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		E0F6CAF526F74F29005B9EB1 /* ISP */ = {
@@ -461,34 +672,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06AB61826FCB1F4002CB814 /* CitySceneCoordinator.swift in Sources */,
+				E06AB60526FC9FD4002CB814 /* CityResponseDTO+Mapping.swift in Sources */,
+				E0E29AC826FA3E9B00B75169 /* DataTransferService.swift in Sources */,
 				E0AF25C526F992AC008C003A /* BlueViewController.swift in Sources */,
 				E0A06DD526F8561100E132E1 /* ServiceFactory.swift in Sources */,
+				E06AB5C026FC722A002CB814 /* APIEndpoints.swift in Sources */,
+				E0E29AC426FA1A3300B75169 /* Endpoint.swift in Sources */,
+				E0E29ACA26FA3EBA00B75169 /* NetworkService.swift in Sources */,
 				E0F6CAF926F7525F005B9EB1 /* ISP.swift in Sources */,
 				E0A06DE026F8722700E132E1 /* ProductListDIContainer.swift in Sources */,
+				E06AB60326FC9E26002CB814 /* CityRequestDTO+Mapping.swift in Sources */,
 				E0AF25BD26F9921B008C003A /* ButtonsCoordinator.swift in Sources */,
 				E0625C7B26F5F1D600D7DAD0 /* BillingViewController.swift in Sources */,
 				E0625C7F26F5F1EA00D7DAD0 /* LicenseUseCase.swift in Sources */,
 				E01879D326F4D23500BD26A8 /* ColorUseCase.swift in Sources */,
 				E069E35C26F3860900ED4467 /* ViewController.swift in Sources */,
+				E0E29AC626FA1A9B00B75169 /* NetworkConfigurable.swift in Sources */,
+				E06AB5F826FC8223002CB814 /* RepositoryTask.swift in Sources */,
 				E0A06DCE26F8546900E132E1 /* ServiceConcrete_NotFactory.swift in Sources */,
 				E0AF25C326F992A5008C003A /* RedViewController.swift in Sources */,
 				E0AF25BB26F9920F008C003A /* ButtonsViewController.swift in Sources */,
+				E06AB5F526FC81F6002CB814 /* Cancellable.swift in Sources */,
 				E069E36D26F3862200ED4467 /* NotSRP.swift in Sources */,
 				E0625C7826F5ED7600D7DAD0 /* MainViewController.swift in Sources */,
 				E01879C326F4CD6B00BD26A8 /* ColorViewController.swift in Sources */,
 				E0A06DDC26F8721100E132E1 /* ProductListViewModel.swift in Sources */,
+				E06AB61426FCA5A7002CB814 /* CityViewModel.swift in Sources */,
 				E0A2F7EA26F3920A0090FAF0 /* SRPwithFacade.swift in Sources */,
+				E06AB61226FCA584002CB814 /* CityViewController.swift in Sources */,
 				E0A06DE426F8752000E132E1 /* ProductTableViewCell.swift in Sources */,
 				E0A06DC626F8540600E132E1 /* Application_ApplyFactory.swift in Sources */,
 				E069E35826F3860900ED4467 /* AppDelegate.swift in Sources */,
 				E0625C7D26F5F1DD00D7DAD0 /* BillingViewModel.swift in Sources */,
 				E069E35A26F3860900ED4467 /* SceneDelegate.swift in Sources */,
 				E0A06DDE26F8722300E132E1 /* ProductListUseCase.swift in Sources */,
+				E06AB61626FCB04C002CB814 /* CitySceneDIContainer.swift in Sources */,
+				E06AB60726FCA0D0002CB814 /* CityRepositoryImpl.swift in Sources */,
 				E01879BF26F4C2C500BD26A8 /* KeychainRepository.swift in Sources */,
+				E06AB60A26FCA28C002CB814 /* CityUseCase.swift in Sources */,
 				E0F6CAF726F74F46005B9EB1 /* NotISP.swift in Sources */,
 				E0A06DD126F8552900E132E1 /* ServiceConcrete_ApplyFactory.swift in Sources */,
 				E0AF25C826F99368008C003A /* ButtonsUseCase.swift in Sources */,
 				E0A06DD326F855F100E132E1 /* Service.swift in Sources */,
+				E06AB5FE26FC9CF6002CB814 /* CityRepository.swift in Sources */,
 				E0A06DDA26F8720800E132E1 /* ProductListViewController.swift in Sources */,
 				E0AF25C126F9925B008C003A /* ButtonsDIContainer.swift in Sources */,
 				E01879BD26F4C2BF00BD26A8 /* KeychainService.swift in Sources */,
@@ -499,6 +726,7 @@
 				E0AF25B926F991FC008C003A /* ButtonsViewModel.swift in Sources */,
 				E0625C8326F5F1F700D7DAD0 /* BusinessUseCase.swift in Sources */,
 				E01879D126F4D15F00BD26A8 /* ColorModel.swift in Sources */,
+				E06AB60126FC9D99002CB814 /* City.swift in Sources */,
 				E0A06DC826F8540D00E132E1 /* Application_NotFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
