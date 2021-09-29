@@ -46,6 +46,10 @@
 		E06AB61426FCA5A7002CB814 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB61326FCA5A7002CB814 /* CityViewModel.swift */; };
 		E06AB61626FCB04C002CB814 /* CitySceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB61526FCB04C002CB814 /* CitySceneDIContainer.swift */; };
 		E06AB61826FCB1F4002CB814 /* CitySceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB61726FCB1F4002CB814 /* CitySceneCoordinator.swift */; };
+		E06AB61D26FCCAD3002CB814 /* NetworkConfigurableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB61C26FCCAD3002CB814 /* NetworkConfigurableMock.swift */; };
+		E06AB61F26FCCADB002CB814 /* NetworkSessionManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB61E26FCCADB002CB814 /* NetworkSessionManagerMock.swift */; };
+		E06AB62126FCCAFC002CB814 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB62026FCCAFC002CB814 /* NetworkServiceTests.swift */; };
+		E06AB62326FCCB08002CB814 /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06AB62226FCCB08002CB814 /* DataTransferServiceTests.swift */; };
 		E0A06DC626F8540600E132E1 /* Application_ApplyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A06DC526F8540600E132E1 /* Application_ApplyFactory.swift */; };
 		E0A06DC826F8540D00E132E1 /* Application_NotFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A06DC726F8540D00E132E1 /* Application_NotFactory.swift */; };
 		E0A06DCE26F8546900E132E1 /* ServiceConcrete_NotFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A06DCD26F8546900E132E1 /* ServiceConcrete_NotFactory.swift */; };
@@ -124,6 +128,10 @@
 		E06AB61326FCA5A7002CB814 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		E06AB61526FCB04C002CB814 /* CitySceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySceneDIContainer.swift; sourceTree = "<group>"; };
 		E06AB61726FCB1F4002CB814 /* CitySceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySceneCoordinator.swift; sourceTree = "<group>"; };
+		E06AB61C26FCCAD3002CB814 /* NetworkConfigurableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableMock.swift; sourceTree = "<group>"; };
+		E06AB61E26FCCADB002CB814 /* NetworkSessionManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManagerMock.swift; sourceTree = "<group>"; };
+		E06AB62026FCCAFC002CB814 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkServiceTests.swift; path = SOLIDTests/UseCases/NetworkServiceTests.swift; sourceTree = SOURCE_ROOT; };
+		E06AB62226FCCB08002CB814 /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
 		E0A06DC526F8540600E132E1 /* Application_ApplyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application_ApplyFactory.swift; sourceTree = "<group>"; };
 		E0A06DC726F8540D00E132E1 /* Application_NotFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application_NotFactory.swift; sourceTree = "<group>"; };
 		E0A06DCD26F8546900E132E1 /* ServiceConcrete_NotFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConcrete_NotFactory.swift; sourceTree = "<group>"; };
@@ -210,6 +218,7 @@
 			children = (
 				E03D2F3E26F8C06600C24B98 /* UseCases */,
 				E03D2F3D26F8C06100C24B98 /* Presentation */,
+				E06AB61926FCCAB9002CB814 /* Infrastructure */,
 				E03D2F3526F8C03D00C24B98 /* SOLIDTests.swift */,
 				E03D2F3726F8C03D00C24B98 /* Info.plist */,
 			);
@@ -333,8 +342,8 @@
 		E06AB5BA26FC71B1002CB814 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				E06AB5BC26FC71DD002CB814 /* Network */,
 				E06AB5BD26FC71E3002CB814 /* Repositories */,
+				E06AB5BC26FC71DD002CB814 /* Network */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -466,6 +475,33 @@
 				E06AB61526FCB04C002CB814 /* CitySceneDIContainer.swift */,
 			);
 			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		E06AB61926FCCAB9002CB814 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB61A26FCCAC2002CB814 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		E06AB61A26FCCAC2002CB814 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB62026FCCAFC002CB814 /* NetworkServiceTests.swift */,
+				E06AB62226FCCB08002CB814 /* DataTransferServiceTests.swift */,
+				E06AB61B26FCCAC6002CB814 /* Mocks */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E06AB61B26FCCAC6002CB814 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E06AB61C26FCCAD3002CB814 /* NetworkConfigurableMock.swift */,
+				E06AB61E26FCCADB002CB814 /* NetworkSessionManagerMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		E0A06DC426F853FD00E132E1 /* DIP */ = {
@@ -663,7 +699,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E03D2F3626F8C03D00C24B98 /* SOLIDTests.swift in Sources */,
+				E06AB61D26FCCAD3002CB814 /* NetworkConfigurableMock.swift in Sources */,
+				E06AB62326FCCB08002CB814 /* DataTransferServiceTests.swift in Sources */,
+				E06AB61F26FCCADB002CB814 /* NetworkSessionManagerMock.swift in Sources */,
 				E03D2F4026F8C07C00C24B98 /* ProductListUseCaseTests.swift in Sources */,
+				E06AB62126FCCAFC002CB814 /* NetworkServiceTests.swift in Sources */,
 				E03D2F4526F8C38400C24B98 /* ProductListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
